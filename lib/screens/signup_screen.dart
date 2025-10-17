@@ -107,7 +107,7 @@ class _SignUpScreenState extends State<SignUpScreen>
   Widget build(BuildContext context) {
     return Consumer<ThemeProvider>(
       builder: (context, themeProvider, child) {
-        return Scaffold(
+    return Scaffold(
           body: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -154,7 +154,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                             ),
                             child: Form(
                               key: _formKey,
-                              child: Column(
+        child: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   // Logo and Welcome
@@ -193,14 +193,14 @@ class _SignUpScreenState extends State<SignUpScreen>
                                   ),
                                   const SizedBox(height: 32),
 
-                                  // Name Field
-                                  TextFormField(
+            // Name Field
+            TextFormField(
                                     controller: _nameController,
-                                    keyboardType: TextInputType.name,
+              keyboardType: TextInputType.name,
                                     textInputAction: TextInputAction.next,
                                     validator: ValidationUtils.validateName,
                                     decoration: InputDecoration(
-                                      labelText: 'Full Name',
+                labelText: 'Full Name',
                                       hintText: 'Enter your full name',
                                       prefixIcon: Icon(
                                         Icons.person_outline,
@@ -222,18 +222,18 @@ class _SignUpScreenState extends State<SignUpScreen>
                                           width: 2,
                                         ),
                                       ),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 20),
+              ),
+            ),
+            const SizedBox(height: 20),
 
-                                  // Email Field
-                                  TextFormField(
+            // Email Field
+            TextFormField(
                                     controller: _emailController,
-                                    keyboardType: TextInputType.emailAddress,
+              keyboardType: TextInputType.emailAddress,
                                     textInputAction: TextInputAction.next,
                                     validator: ValidationUtils.validateEmail,
                                     decoration: InputDecoration(
-                                      labelText: 'Email Address',
+                labelText: 'Email Address',
                                       hintText: 'Enter your email',
                                       prefixIcon: Icon(
                                         Icons.email_outlined,
@@ -255,12 +255,12 @@ class _SignUpScreenState extends State<SignUpScreen>
                                           width: 2,
                                         ),
                                       ),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 20),
+              ),
+            ),
+            const SizedBox(height: 20),
 
-                                  // Password Field
-                                  TextFormField(
+            // Password Field
+            TextFormField(
                                     controller: _passwordController,
                                     obscureText: _obscurePassword,
                                     textInputAction: TextInputAction.next,
@@ -269,7 +269,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                                       setState(() {}); // Trigger rebuild for password strength indicator
                                     },
                                     decoration: InputDecoration(
-                                      labelText: 'Password',
+                labelText: 'Password',
                                       hintText: 'Create a strong password',
                                       prefixIcon: Icon(
                                         Icons.lock_outline,
@@ -418,7 +418,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                                   ),
                                   const SizedBox(height: 32),
 
-                                  // Sign Up Button
+            // Sign Up Button
                                   AnimatedButton(
                                     text: 'CREATE ACCOUNT',
                                     onPressed: _isLoading ? null : _signUp,
@@ -480,7 +480,7 @@ class _SignUpScreenState extends State<SignUpScreen>
                                       const SizedBox(width: 16),
                                       Expanded(
                                         child: OutlinedButton.icon(
-                                          onPressed: () {
+              onPressed: () {
                                             ErrorHandler.showInfoSnackBar(context, 'Apple sign-up coming soon!');
                                           },
                                           icon: const Icon(Icons.apple, size: 20),
@@ -507,8 +507,8 @@ class _SignUpScreenState extends State<SignUpScreen>
                                           color: themeProvider.currentTheme.colorScheme.onSurface.withOpacity(0.7),
                                         ),
                                       ),
-                                      TextButton(
-                                        onPressed: () => Navigator.pushReplacementNamed(context, '/login'),
+            TextButton(
+              onPressed: () => Navigator.pushReplacementNamed(context, '/login'),
                                         child: Text(
                                           'Sign In',
                                           style: TextStyle(
@@ -518,10 +518,10 @@ class _SignUpScreenState extends State<SignUpScreen>
                                         ),
                                       ),
                                     ],
-                                  ),
-                                ],
-                              ),
-                            ),
+            ),
+          ],
+        ),
+      ),
                           ),
                         ),
                       ),

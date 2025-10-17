@@ -94,7 +94,7 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
         ),
       );
       
-      Navigator.pop(context);
+      Navigator.pushReplacementNamed(context, '/home');
     }
   }
 
@@ -260,7 +260,7 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
                     ),
                   ),
                   child: Row(
-                    children: [
+              children: [
                       Icon(
                         Icons.calendar_today_rounded,
                         color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
@@ -274,9 +274,9 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
                       Icon(
                         Icons.arrow_drop_down_rounded,
                         color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
-                      ),
-                    ],
-                  ),
+                ),
+              ],
+            ),
                 ),
               ),
               const SizedBox(height: 24),
