@@ -4,6 +4,8 @@ import 'package:expense_tracker/screens/main_navigation_screen.dart';
 import 'package:expense_tracker/screens/welcome_screen.dart';
 import 'package:expense_tracker/screens/login_screen.dart';
 import 'package:expense_tracker/screens/signup_screen.dart';
+import 'package:expense_tracker/screens/profile_screen.dart';
+import 'package:expense_tracker/screens/settings_screen.dart';
 import 'package:expense_tracker/models/expense_provider.dart';
 import 'package:expense_tracker/models/theme_provider.dart';
 
@@ -35,6 +37,8 @@ class ExpenseTrackerApp extends StatelessWidget {
             '/login': (context) => const LoginScreen(),
             '/signup': (context) => const SignUpScreen(),
             '/home': (context) => const MainNavigationScreen(),       // Main app with navigation
+            '/profile': (context) => const ProfileScreen(),
+            '/settings': (context) => const SettingsScreen(),
           },
         );
       },

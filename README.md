@@ -47,8 +47,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/expense_tracker.git
-   cd expense_tracker
+   git clone https://github.com/Venkatatejadegala/-expense-tracker-pro.git
+   cd -expense-tracker-pro
    ```
 
 2. **Install dependencies**
@@ -153,13 +153,10 @@ lib/
 ### **UI/UX Libraries**
 - **FL Chart** - Beautiful charts and graphs
 - **Flutter Staggered Animations** - Smooth animations
-- **Lottie** - Vector animations
-- **Shimmer** - Loading animations
 
 ### **Utilities**
 - **SharedPreferences** - Local data storage
 - **Intl** - Internationalization
-- **Flutter SVG** - SVG image support
 
 ---
 
@@ -284,10 +281,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 **Author**
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+**Venkatatejadegala**
+- GitHub: [@Venkatatejadegala](https://github.com/Venkatatejadegala)
+- Email: 23pa1a4227@vishnu.edu.in
+- LinkedIn: (add your profile link here)
 
 ---
 
@@ -304,9 +301,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or need help:
 
-- 📧 **Email**: your.email@example.com
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/expense_tracker/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/expense_tracker/discussions)
+- 📧 **Email**: 23pa1a4227@vishnu.edu.in
+- 🐛 **Issues**: [GitHub Issues](https://github.com/Venkatatejadegala/-expense-tracker-pro/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/Venkatatejadegala/-expense-tracker-pro/discussions)
 
 ---
 

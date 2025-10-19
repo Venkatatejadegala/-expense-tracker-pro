@@ -206,7 +206,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Icons.settings_rounded,
                 color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
               ),
-              onPressed: () => Navigator.pushNamed(context, '/profile'),
+              onPressed: () => Navigator.pushNamed(context, '/settings'),
             ),
           ],
         ),
