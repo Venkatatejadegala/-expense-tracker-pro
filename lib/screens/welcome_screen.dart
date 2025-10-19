@@ -112,10 +112,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> with TickerProviderStateM
                                     ),
                                   ],
                                 ),
-                                child: Icon(
-                                  Icons.account_balance_wallet_rounded,
-                                  size: 80,
-                                  color: Colors.white,
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(16),
+                                  child: Image.asset(
+                                    'assets/images/expense.jpeg',
+                                    width: 80,
+                                    height: 80,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                               const SizedBox(height: 32),
